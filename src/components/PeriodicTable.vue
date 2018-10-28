@@ -3,7 +3,8 @@
     <div class="periodic-table-wrapper mh-100">
       <div class="periodic-table container">
         <div v-if="element" style="margin: 50px 0;">
-          {{element.name}}
+          <!-- <shell-diagram :shells="element.shells" /> -->
+          <h4>{{element.name}}</h4>
           {{element.summary}}
         </div>
         <div style="display: flex; flex-direction: column; align-items: center;">
@@ -58,12 +59,14 @@
 <script>
 import CategoryLegend from './CategoryLegend.vue';
 import PeriodicElement from './PeriodicElement.vue';
+import ShellDiagram from './ShellDiagram.vue';
 
 export default {
   name: "periodic-table",
   components: {
     CategoryLegend,
-    PeriodicElement
+    PeriodicElement,
+    ShellDiagram
   },
   data() {
     return {

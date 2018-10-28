@@ -7,7 +7,10 @@
         </a>
         <filter-options v-if="isShowingFilterOptions" />
         <periodic-table />
-        <router-link :to="{ name: 'home' }" style="position: absolute; left: 50%; right: 50%; bottom: 30px; text-decoration: none; color: silver;">Home</router-link>
+        <div style="position: absolute; left: 30px; bottom: 30px; bottom: 30px;">
+            <router-link :to="{ name: 'home' }" style="text-decoration: none; color: silver; margin: 0 15px;">Home</router-link>
+            <router-link :to="{ name: 'periodic-list' }" style="text-decoration: none; color: silver; margin: 0 15px;">Periodic List</router-link>
+        </div>
     </div>
 </template>
 
@@ -16,7 +19,7 @@ import FilterOptions from './FilterOptions.vue';
 import PeriodicTable from './PeriodicTable.vue';
 
 export default {
-  name: "main",
+  name: "default",
   components: {
       FilterOptions,
       PeriodicTable

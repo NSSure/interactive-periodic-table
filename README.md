@@ -2,6 +2,7 @@
 
 ![Alt text](screenshots/splash-screen.PNG?raw=true "Splash screen")
 ![Alt text](screenshots/periodic-table.PNG?raw=true "Periodic table screen")
+![Alt text](screenshots/periodic-list.PNG?raw=true "Periodic list screen")
 
 ## Project setup
 ```
