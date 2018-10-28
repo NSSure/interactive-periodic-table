@@ -6,7 +6,7 @@ import Main from './components/Main.vue';
 Vue.use(VueRouter);
 
 const routes = [
-    { path: '/', component: SplashScreen },
+    { name: 'home', path: '/', component: SplashScreen },
     { name: 'periodic-table', path: '/periodic-table', component: Main }
   ]
 

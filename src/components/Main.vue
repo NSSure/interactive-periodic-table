@@ -1,8 +1,13 @@
 <template>
     <div id="app">
-        <a class="dismiss" @click="toggleFilterOptions" v-bind:style="[isShowingFilterOptions ? { left: '332px' } : { left: '' }]" />
+        <!-- <a class="dismiss" @click="toggleFilterOptions" v-bind:style="[isShowingFilterOptions ? { left: '332px' } : { left: '' }]" /> -->
+        <a class="dismiss" @click="toggleFilterOptions" v-bind:style="[isShowingFilterOptions ? { left: '332px' } : { left: '' }]">
+            <span v-if="isShowingFilterOptions">Collapse</span>
+            <span v-else>Expand</span>
+        </a>
         <filter-options v-if="isShowingFilterOptions" />
         <periodic-table />
+        <router-link :to="{ name: 'home' }" style="position: absolute; left: 50%; right: 50%; bottom: 30px; text-decoration: none; color: silver;">Home</router-link>
     </div>
 </template>
 
@@ -47,17 +52,17 @@ export default {
 .dismiss:before, .dismiss:after {
   position: absolute;
   left: 15px;
-  content: ' ';
+  /* content: ' '; */
   height: 33px;
   width: 2px;
   background-color: #fff;
 }
 
-.dismiss:before {
+/* .dismiss:before {
   transform: rotate(45deg);
 }
 
 .dismiss:after {
   transform: rotate(-45deg);
-}
+} */
 </style>

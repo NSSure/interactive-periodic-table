@@ -87,17 +87,20 @@ select option {
   background-color: #222222;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  padding-left: 15px;
 }
 
 .badge-panel > .badge > .badge-swatch {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 0;
   background-color: rgba(0.0, 0.0, 0.0, 0.0) !important;
+  text-align: center;
 }
 
 .badge-content {
   width: 100%;
   padding: 15px;
+  text-align: left;
 }
 
 .fade-enter-active,
