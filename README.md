@@ -1,4 +1,7 @@
-# simple-periodic-table
+# Interactive Periodic Table
+
+![Alt text](screenshots/splash-screen.PNG?raw=true "Splash screen")
+![Alt text](screenshots/periodic-table.PNG?raw=true "Periodic table screen")
 
 ## Project setup
 ```
