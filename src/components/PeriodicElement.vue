@@ -1,5 +1,5 @@
 <template>
-  <div class="periodic-element grow" :class="{ 'greyed-out': isDisabled }" v-if="element" v-bind:style="{ backgroundColor: element.color }" v-on:click="selectElement()">
+  <div class="periodic-element grow" style="cursor: pointer;" :title="element.name" :class="{ 'greyed-out': isDisabled }" v-if="element" v-bind:style="{ backgroundColor: element.color }" v-on:click="selectElement()">
     <span><strong>{{element.symbol}}</strong></span>
     <div>
       {{element.number}}
@@ -35,6 +35,10 @@ export default {
         return true;
       }
 
+      if(this.$store.state.phase !== 'all' && this.$store.state.phase !== this.element.phase) {
+        return true;
+      }
+
       return false
     }
   },
@@ -62,7 +66,7 @@ export default {
   margin: 5px;
 }
 .greyed-out {
-  background-color: #F4F3F2 !important;
+  background-color: #ffffff !important;
 }
 .grow { 
   transition: all .2s ease-in-out; 

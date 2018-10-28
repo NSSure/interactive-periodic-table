@@ -6,7 +6,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         groupCoordinate: -1,
-        periodCoordinate: -1
+        periodCoordinate: -1,
+        phase: 'all'
     },
     mutations: {
         setGroupCoordinate(state, groupValue) {
@@ -14,6 +15,9 @@ export default new Vuex.Store({
         },
         setPeriodCoordinate(state, periodValue) {
             state.periodCoordinate = periodValue;
+        },
+        setPhase(state, phase) {
+            state.phase = phase;
         }
     }
 })
