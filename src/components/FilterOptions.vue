@@ -69,9 +69,9 @@ export default {
   left: 0;
   top: 0;
   bottom: 0;
-  /* background: linear-gradient(to bottom, #323232 0%, #3F3F3F 0%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-  background-blend-mode: multiply; */
-  background-color: rgba(0.0, 0.0, 0.0, 0.25);
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 0%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
+  /* background-color: rgba(0.0, 0.0, 0.0, 0.25); */
   padding: 30px;
   z-index: 9999;
 }

@@ -7,10 +7,6 @@
         </a>
         <filter-options v-if="isShowingFilterOptions" />
         <periodic-table />
-        <div style="position: absolute; left: 30px; bottom: 30px; bottom: 30px;">
-            <router-link :to="{ name: 'home' }" style="text-decoration: none; color: silver; margin: 0 15px;">Home</router-link>
-            <router-link :to="{ name: 'periodic-list' }" style="text-decoration: none; color: silver; margin: 0 15px;">Periodic List</router-link>
-        </div>
     </div>
 </template>
 

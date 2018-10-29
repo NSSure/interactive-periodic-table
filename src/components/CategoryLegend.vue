@@ -1,51 +1,49 @@
 <template>
     <div class="legend">
         <div class="row my-3">
-            <div class="col-3 px-3">
+            <div class="col">
                 <div class="badge">
-                <div class="badge-swatch alkali-metals"></div>
-                <span>Alkali metals</span>
+                    <div class="badge-swatch alkali-metals"></div>
+                    <span>Alkali metals</span>
                 </div>
             </div>
-            <div class="col-3 px-3">
+            <div class="col">
                 <div class="badge">
-                <div class="badge-swatch alkaline-earth-metals"></div>
-                <span>Alkaline earth metals</span>
+                    <div class="badge-swatch alkaline-earth-metals"></div>
+                    <span>Alkaline earth metals</span>
                 </div>
             </div>
-            <div class="col-3 px-3">
+            <div class="col">
                 <div class="badge">
-                <div class="badge-swatch transition-metals"></div>
-                <span>Transition metals</span>
+                    <div class="badge-swatch transition-metals"></div>
+                    <span>Transition metals</span>
                 </div>
             </div>
-            <div class="col-3 px-3">
+            <div class="col">
                 <div class="badge">
-                <div class="badge-swatch post-transition-metals"></div>
-                <span>Post transition metals</span>
+                    <div class="badge-swatch post-transition-metals"></div>
+                    <span>Post transition metals</span>
                 </div>
             </div>
-            </div>
-            <div class="row my-3">
-            <div class="col-3 px-3">
+            <div class="col">
                 <div class="badge">
-                <div class="badge-swatch metalloid"></div>
-                <span>Metalloid</span>
+                    <div class="badge-swatch metalloid"></div>
+                    <span>Metalloid</span>
                 </div>
             </div>
-            <div class="col-3 px-3">
+            <div class="col">
                 <div class="badge">
                 <div class="badge-swatch polyatomic-nonmetal"></div>
                 <span>Polyatomic metal</span>
                 </div>
             </div>
-            <div class="col-3 px-3">
+            <div class="col">
                 <div class="badge">
                 <div class="badge-swatch diatomic-nonmetal"></div>
                 <span>Diatomic nonmetal</span>
                 </div>
             </div>
-            <div class="col-3 px-3">
+            <div class="col">
                 <div class="badge">
                 <div class="badge-swatch noble-gas"></div>
                 <span>Noble gas</span>

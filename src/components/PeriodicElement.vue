@@ -1,5 +1,5 @@
 <template>
-  <div class="periodic-element grow" style="cursor: pointer;" :title="element.name" :class="{ 'greyed-out': isDisabled }" v-if="element" v-bind:style="{ backgroundColor: element.color }" v-on:click="selectElement()">
+  <div class="periodic-element grow" style="cursor: pointer; border-bottom: 5px solid #f7f7f7;" :title="element.name" :class="{ 'greyed-out': isDisabled }" v-if="element" v-bind:style="{ backgroundColor: element.color }" v-on:click="selectElement()">
     <span><strong>{{element.symbol}}</strong></span>
     <div>
       {{element.number}}
@@ -15,7 +15,10 @@ export default {
   name: "periodic-element",
   props: {
     xPos: Number,
-    yPos: Number
+    yPos: Number,
+    lanthanideIndex: Number,
+    actinideIndex: Number,
+    type: String
   },
   data() {
     return {
@@ -23,7 +26,17 @@ export default {
     }
   },
   mounted () {
-    this.element = elements.find(x => x.xpos === this.xPos && x.ypos === this.yPos)
+    switch(this.type) {
+      case 'regular':
+        this.element = elements.find(x => x.xpos === this.xPos && x.ypos === this.yPos)
+        break;
+      case 'lanthanide':
+        this.element = elements.find(x => x.lanthanide_index === this.lanthanideIndex);
+        break;
+      case 'actinide':
+        this.element = elements.find(x => x.actinide_index === this.actinideIndex);
+        break;
+    }
   },
   computed: {
     isDisabled() {
