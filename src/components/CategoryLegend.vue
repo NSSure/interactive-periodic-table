@@ -1,6 +1,6 @@
 <template>
     <div class="legend">
-        <div class="row my-3">
+        <div class="d-flex flex-row p-3">
             <div class="col">
                 <div class="badge">
                     <div class="badge-swatch alkali-metals"></div>
