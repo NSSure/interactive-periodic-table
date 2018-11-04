@@ -1,7 +1,7 @@
 <template>
     <div class="splash-screen">
         <span class="title">INTERACTIVE PERIODIC TABLE</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="pulse" version="1.1" viewBox="0 0 200 200">
+        <svg xmlns="http://www.w3.org/2000/svg" class="pulse splash-diagram" version="1.1" viewBox="0 0 200 200">
             <g fill="none" transform="translate(0,50)">
                 <g>
                     <circle cx="100" cy="50" r="40" stroke="#f7f7f7" stroke-width="2" />
@@ -51,7 +51,7 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
-svg {
+.splash-diagram {
   width: 100vmin;
   height: 100vmin;  
   max-width: 200px;
@@ -98,10 +98,6 @@ a {
 .enter:hover {
     cursor: pointer;
     border-bottom: 1px solid silver;
-}
-
-.attribution {
-
 }
 
 .pulse {

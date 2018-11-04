@@ -28,6 +28,7 @@
       </div>
       <div class="side-panel" v-if="element">
         <div class="side-panel-content">
+          <router-link :to="{ name: 'element' }">Details</router-link>
           <div class="element-detail">
             <div class="badge-panel">
               <div class="badge">
