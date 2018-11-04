@@ -41,7 +41,7 @@ export default {
   name: 'shell-diagram',
   props: {
     elementName: {
-        default: 'Element',
+        default: '',
         type: String
     },
     shells: Array,
@@ -88,20 +88,8 @@ export default {
 </script>
 
 <style scoped>
-.spin {
-    animation-name: rotate;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-
 .diagram-text {
     font-size: 18px;
-}
-
-@keyframes rotate {
-  to {
-    transform: rotate(360deg);
-  }
 }
 </style>
 

@@ -130,4 +130,16 @@ html, body {
 .navigation li a {
   color: silver;
 }
+
+.spin {
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
 </style>

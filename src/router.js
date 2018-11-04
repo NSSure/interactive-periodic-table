@@ -15,7 +15,7 @@ const routes = [
     { name: 'periodic-list', path: '/periodic-list', component: PeriodicList },
     { name: 'filter', path: '/filter', component: FilterOptions },
     { name: 'about', path: '/about', component: About },
-    { name: 'element', path: '/element', component: ElementDetails }
+    { name: 'element', path: '/element/:number', component: ElementDetails, props: true }
   ]
 
 export default new VueRouter({

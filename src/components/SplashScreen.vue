@@ -1,30 +1,15 @@
 <template>
     <div class="splash-screen">
         <span class="title">INTERACTIVE PERIODIC TABLE</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="pulse splash-diagram" version="1.1" viewBox="0 0 200 200">
-            <g fill="none" transform="translate(0,50)">
-                <g>
-                    <circle cx="100" cy="50" r="40" stroke="#f7f7f7" stroke-width="2" />
-                    <circle cx="100" cy="10" r="5" fill="#EBBFD8" />
-                    <circle cx="100" cy="90" r="5" fill="#EBBFD8" />
-                </g>
-                <g>
-                    <circle cx="100" cy="50" r="55" stroke="#f7f7f7" stroke-width="2" />
-                    <circle cx="100" cy="-5" r="5" fill="#EBBFD8" />
-                    <circle cx="100" cy="105" r="5" fill="#EBBFD8" />
-                    <circle cx="60" cy="87" r="5" fill="#EBBFD8" />
-                    <circle cx="45" cy="50" r="5" fill="#EBBFD8" />
-                    <circle cx="60" cy="12" r="5" fill="#EBBFD8" />
-                    <circle cx="140" cy="12" r="5" fill="#EBBFD8" />
-                    <circle cx="155" cy="50" r="5" fill="#EBBFD8" />
-                    <circle cx="140" cy="87" r="5" fill="#EBBFD8" />
-                </g>
-                <g class="outer-shell">
-                    <circle cx="100" cy="50" r="70" stroke="#f7f7f7" stroke-width="2" />
-                    <circle cx="100" cy="-20" r="5" fill="#EBBFD8" />
-                </g>
-            </g>
-        </svg> 
+        
+        <shell-diagram
+            class="pulse"
+            :element-name="'Welcome'"
+            :shells="[2,8,1]" 
+            :shell-spacing="25" 
+            :diagram-width="300" 
+            :diagram-height="300" 
+            :electron-radius="5" />
 
         <router-link class="enter" :to="{ name: 'periodic-table' }">Enter Periodic Table</router-link>
 
@@ -40,8 +25,13 @@
 </template>
 
 <script>
+import ShellDiagram from './ShellDiagram.vue'
+
 export default {
   name: "splash-screen",
+  components: {
+    ShellDiagram
+  },
   props: {
     isHidden: false
   }
